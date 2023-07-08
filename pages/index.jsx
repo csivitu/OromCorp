@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Main from '@components/Main';
 import Team from '../components/team';
 import Awards from '../components/awards';
 import Contact from '../components/contact';
+
 
 export default function Home() {
   return (

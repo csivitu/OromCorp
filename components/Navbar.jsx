@@ -4,6 +4,9 @@ import {AiOutlineMenu, AiOutLineClose} from 'react-icons/ai'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import oromLogo from '../public/logo.webp'
+import localFont from '@next/font/local';
+
+const myFont = localFont({src: "../public/Canopee.woff2"})
 
 const Navbar = () => {
 
@@ -26,7 +29,7 @@ const Navbar = () => {
       }, []);
     
   return (
-    <div className='fixed left-0 top-0 w-full z-10 ease-in duration-300' >
+    <div style = {myFont.style} className='fixed left-0 top-0 w-full z-10 ease-in duration-300' >
         <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text'>
             <Link href = '/'>
                 <Image
@@ -37,17 +40,17 @@ const Navbar = () => {
                 />
             </Link>
             <ul className='hidden sm:flex'>
-                <li className='p-4'>
+                <li className='p-4 text-2xl'>
                     <Link href = '/'>Home</Link>
                 </li>
-                <li className='p-4'>
+                <li className='p-4 text-2xl'>
                     <Link href = '/#team'>Our Team</Link>
                 </li>
-                <li className='p-4'>
-                    <Link href = '/#award'>Awards</Link>
+                <li className='p-4 text-2xl'>
+                    <Link href = '/#awards'>Awards</Link>
                 </li>
-                <li className='p-4'>
-                    <Link href = '/#contact'>Contact Us</Link>
+                <li className='p-4 text-2xl'>
+                    <Link href = '/#contact'>Contact us</Link>
                 </li>
             </ul>
 
