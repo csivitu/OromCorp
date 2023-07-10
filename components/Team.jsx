@@ -1,16 +1,17 @@
 import React from 'react'
-import oromLogo from '../public/logo.webp'
+import oromLogo from '../public/images/logo.webp'
 import Image from 'next/image';
 import localFont from '@next/font/local';
 import Marquee from 'react-fast-marquee';
 import Footer from './Footer';
 
-const myFont = localFont({src: "../public/Crima.otf"})
+const myFont = localFont({src: "../public/fonts/Crima.otf"})
 
 const team = () => {
   return (
+    <div className='flex flex-col relative h-screen text-white bg-[#172241]'>
     <div id='team' className='container mx-auto px-4 content-center'>
-      <h2 style = {myFont.style} className="text-4xl mb-4 text-center pt-9">Our Team</h2>
+      <h2 style = {myFont.style} className="text-4xl text-center pt-6">Our Team</h2>
 
       <div className='flex p-7'>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
@@ -24,8 +25,8 @@ const team = () => {
         </div>
       </div>
 
-      <div className='flex text-center content-center'>
-        <div className='w-full flex-1/4 p-5'>
+      <div className='flex flex-row'>
+        <div className='w-full p-2'>
           <Image
             src={oromLogo}
             alt="Picture 1"
@@ -33,7 +34,7 @@ const team = () => {
           <h5 className='text-3xl'>Name</h5>
           <p className="text-2xl mt-0 italic">designation</p>
         </div>
-        <div className='w-full flex-1/4 p-5'>
+        <div className='w-full p-2'>
           <Image
             src={oromLogo}
             alt="Picture 1"
@@ -41,7 +42,7 @@ const team = () => {
           <h5 className='text-3xl'>Name</h5>
           <p className="text-2xl mt-0 italic">designation</p>
         </div>
-        <div className='w-full flex-1/4 p-5'>
+        <div className='w-full p-2'>
           <Image
             src={oromLogo}
             alt="Picture 1"
@@ -49,7 +50,7 @@ const team = () => {
           <h5 className='text-3xl'>Name</h5>
           <p className="text-2xl mt-0 italic">designation</p>
         </div>
-        <div className='w-full flex-1/4 p-5'>
+        <div className='w-full p-2'>
           <Image
             src={oromLogo}
             alt="Picture 1"
@@ -59,7 +60,8 @@ const team = () => {
         </div>
       </div>
 
-    {/* <Footer /> */}
+    </div>
+    <Footer />
     </div>
   );
 }

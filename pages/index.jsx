@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Main from '@components/Main';
-import Team from '../components/team';
-import Awards from '../components/awards';
-import Contact from '../components/contact';
+import Team from '../components/Team';
+import Awards from '../components/Awards';
+import Contact from '../components/Contact';
 
 
 export default function Home() {

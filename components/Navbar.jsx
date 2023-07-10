@@ -3,10 +3,10 @@ import Link from 'next/link'
 import {AiOutlineMenu, AiOutLineClose} from 'react-icons/ai'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import oromLogo from '../public/logo.webp'
+import oromLogo from '../public/images/logo.webp'
 import localFont from '@next/font/local';
 
-const myFont = localFont({src: "../public/Crima.otf"})
+const myFont = localFont({src: "../public/fonts/Crima.otf"})
 
 const Navbar = () => {
 
@@ -35,8 +35,7 @@ const Navbar = () => {
                 <Image
                     src={oromLogo}
                     alt='company logo'
-                    width={100}
-                    height={100}
+                    className='h-7 w-12 pb-0'
                 />
             </Link>
             <ul className='hidden sm:flex'>
