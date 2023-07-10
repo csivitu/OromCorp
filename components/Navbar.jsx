@@ -29,8 +29,8 @@ const Navbar = () => {
       }, []);
     
   return (
-    <div style = {myFont.style} className='fixed left-0 top-0 w-full z-10 ease-in duration-300' >
-        <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text'>
+    <div style = {myFont.style} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-slate-100 bg-fixed' >
+        <div className='max-w-[1240px] m-auto flex justify-between items-center p-2 text'>
             <Link href = '/'>
                 <Image
                     src={oromLogo}
@@ -40,16 +40,16 @@ const Navbar = () => {
                 />
             </Link>
             <ul className='hidden sm:flex'>
-                <li className='p-4 text-2xl'>
+                <li className='p-2 pl-4 pr-4 text-2xl'>
                     <Link href = '/'>Home</Link>
                 </li>
-                <li className='p-4 text-2xl'>
+                <li className='p-2 pl-4 pr-4 text-2xl'>
                     <Link href = '/#team'>Our Team</Link>
                 </li>
-                <li className='p-4 text-2xl'>
+                <li className='p-2 pl-4 pr-4 text-2xl'>
                     <Link href = '/#awards'>Awards</Link>
                 </li>
-                <li className='p-4 text-2xl'>
+                <li className='p-2 pl-4 pr-4 text-2xl'>
                     <Link href = '/#contact'>Contact us</Link>
                 </li>
             </ul>

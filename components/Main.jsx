@@ -8,7 +8,7 @@ const myFont = localFont({src: "../public/Canopee.woff2"})
 
 const Main = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16 bg-slate-100'>
+    <div className='w-full md:h-screen p-2 flex items-center py-16 bg-slate-100'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-1'>
         <div className='col-span-2'>
           <h1 style = {myFont.style} className='py-4 text-8xl'>TYPEWRITER TYPOGRAPHY</h1>
