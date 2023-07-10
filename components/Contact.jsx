@@ -21,7 +21,7 @@ const Contact = () => {
     </div>
 
     <div className='flex flex-row'>
-      <div className='px-11 relative'>
+      <div className='px-11'>
         <div className=''>
           <h3 style={myFont1.style} className='relative text-5xl'>About us</h3>
         </div>
