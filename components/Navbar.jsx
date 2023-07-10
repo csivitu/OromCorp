@@ -6,7 +6,7 @@ import Image from 'next/image'
 import oromLogo from '../public/logo.webp'
 import localFont from '@next/font/local';
 
-const myFont = localFont({src: "../public/Canopee.woff2"})
+const myFont = localFont({src: "../public/Crima.otf"})
 
 const Navbar = () => {
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       }, []);
     
   return (
-    <div style = {myFont.style} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-slate-100 bg-fixed' >
+    <div style = {myFont.style} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-[#172241] bg-fixed text-[#F3F4F4]' >
         <div className='max-w-[1240px] m-auto flex justify-between items-center p-2 text'>
             <Link href = '/'>
                 <Image

@@ -5,12 +5,12 @@ import localFont from '@next/font/local';
 import Marquee from 'react-fast-marquee';
 import Footer from './Footer';
 
-const myFont = localFont({src: "../public/Canopee.woff2"})
+const myFont = localFont({src: "../public/Crima.otf"})
 
 const team = () => {
   return (
     <div id='team' className='container mx-auto px-4 content-center'>
-      <h2 style = {myFont.style} className="text-4xl mb-4 text-center pt-9">Team</h2>
+      <h2 style = {myFont.style} className="text-4xl mb-4 text-center pt-9">Our Team</h2>
 
       <div className='flex p-7'>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
